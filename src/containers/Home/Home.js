@@ -10,7 +10,6 @@ export default class Home extends Component {
     return (
       <div className={styles.home}>
         <Helmet title="Home"/>
-
         {/* div wrapping parallax to be size of viewport */}
         <Splash />
         <About />
