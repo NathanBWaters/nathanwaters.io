@@ -8,30 +8,36 @@ export default class About extends Component {
 
   render() {
     const styles = require('./About.scss');
+    const profPic = require('../../../static/prof.jpg');
     return (
       <div className={styles.aboutMe}>
         <Helmet title="About"/>
         <Grid>
           <Row className="show-grid">
-            <Col xs={12} md={3} className={styles.projectTab}>
-              {/* Holds my twitter, linkedin, and github links */}
-              <h4> 1) Inventor </h4>
-              <h4> 2) Software Engineer </h4>
-              <h4> 3) VFX Artist </h4>
-              <p> In that order </p>
+            <Col sm={12} md={3} className={styles.projectTab}>
+              {/* Profile Picture */}
+              <img className={styles.centerImage} src={profPic}/>
             </Col>
-            <Col xs={12} md={7} className={styles.projectTab}>
-              {/* Holds my twitter, linkedin, and github links */}
-              <h4> About Me </h4>
-              <p>I like working hard on inspiring projects where I am learning a tremendous amount each day.</p>
+            <Col sm={12} md={7} className={styles.projectTab}>
+              {/* Main Content */}
+              <h4 className={styles.secondaryText} textDecoration="underline">About Me</h4>
+              <p style={{'color': '#f2f2f2'}}> Inventor&nbsp;  ●&nbsp; Software Engineer&nbsp;  ●&nbsp;  VFX Artist&nbsp;&nbsp;  (in that order)</p>
+              <br />
+              <p className={styles.mainText} >I aspire to make the world a better place
+              through technology and art. I love realizing challenging projects where I learn a tremendous amount each day.
+              Found that outlet first through filmmaking, then video game development, and now in software products.
+              I graduated with honors from UT Austin studying media, computer science, and digital technology.
+                It’s a great time for a hardworking geek to be alive.</p>
 
             </Col>
-            <Col xs={12} md={1} className={styles.projectTab}>
+            <Col sm={12} md={2} className={styles.projectTab}>
               {/* Holds my twitter, linkedin, and github links */}
-              <p>Twitter</p>
-              <p>LinkedIn</p>
-              <p>Github</p>
-              <p>Resume</p>
+              <div className={styles.center}>
+                <p className={styles.rightItems}><i className="fa fa-twitter fa-lg"></i>&nbsp; Twitter</p>
+                <p className={styles.rightItems}><i className="fa fa-linkedin fa-lg"></i>&nbsp; LinkedIn</p>
+                <p className={styles.rightItems}><i className="fa fa-github fa-lg"></i>&nbsp; Github</p>
+                <p className={styles.rightItems}><i className="fa fa-file fa-lg"></i>&nbsp; Resume</p>
+              </div>
             </Col>
           </Row>
         </Grid>
