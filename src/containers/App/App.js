@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { IndexLink } from 'react-router';
-import { LinkContainer } from 'react-router-bootstrap';
+// import { LinkContainer } from 'react-router-bootstrap';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
@@ -67,12 +67,12 @@ export default class App extends Component {
           <Navbar.Collapse eventKey={0}>
             <Nav navbar>
 
-              <LinkContainer to="/projects">
+              {/* <LinkContainer to="/projects">
                 <NavItem eventKey={3}>Projects</NavItem>
               </LinkContainer>
               <LinkContainer to="/about">
                 <NavItem eventKey={4}>About</NavItem>
-              </LinkContainer>
+              </LinkContainer> */}
 
             </Nav>
 
