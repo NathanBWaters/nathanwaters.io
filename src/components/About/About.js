@@ -8,7 +8,7 @@ export default class About extends Component {
 
   render() {
     const styles = require('./About.scss');
-    const profPic = require('../../../static/prof.jpg');
+    const profPic = require('../../../static/prof3.jpg');
     return (
       <div className={styles.aboutMe}>
         <Helmet title="About"/>
