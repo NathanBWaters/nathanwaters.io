@@ -33,10 +33,9 @@ export default class About extends Component {
             <Col sm={12} md={2} className={styles.projectTab}>
               {/* Holds my twitter, linkedin, and github links */}
               <div className={styles.center}>
-                <p className={styles.rightItems}><i className="fa fa-twitter fa-lg"></i>&nbsp; Twitter</p>
-                <p className={styles.rightItems}><i className="fa fa-linkedin fa-lg"></i>&nbsp; LinkedIn</p>
-                <p className={styles.rightItems}><i className="fa fa-github fa-lg"></i>&nbsp; Github</p>
-                <p className={styles.rightItems}><i className="fa fa-file fa-lg"></i>&nbsp; Resume</p>
+                <a href="https://www.linkedin.com/in/nathan-waters-79692652"><p className={styles.rightItems}><i className="fa fa-linkedin fa-lg"></i>&nbsp; LinkedIn</p></a>
+                <a href="https://www.github.com/NathanBWaters"><p className={styles.rightItems}><i className="fa fa-github fa-lg"></i>&nbsp; Github</p></a>
+                {/* <p className={styles.rightItems}><i className="fa fa-file fa-lg"></i>&nbsp; Resume</p> */}
               </div>
             </Col>
           </Row>
