@@ -19,7 +19,7 @@ function formatUrl(path) {
  *
  * Remove it at your own risk.
  */
-export default class ApiClient {
+export default class ApiClient2 {
   constructor(req) {
     methods.forEach((method) =>
       this[method] = (path, { params, data } = {}) => new Promise((resolve, reject) => {

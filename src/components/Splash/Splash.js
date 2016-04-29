@@ -5,9 +5,9 @@ import { Parallax, Background } from 'react-parallax';
 export default class Splash extends Component {
   render() {
     const styles = require('./Splash.scss');
+    const banner = require('../../../static/logo/Banner.png');
     const splash = require('../../../static/splash/splash_temp.png');
-    // require the logo image both from client and server
-    // const logoImage = require('./logo.png');
+
     return (
       <div className={styles.project}>
         <Helmet title="Splash"/>
@@ -15,11 +15,17 @@ export default class Splash extends Component {
         {/* div wrapping parallax to be size of viewport */}
         <Parallax className={styles.parallax} strength={300}>
 					<Background>
-              <img src={splash}/>
+              <div className={styles.black_background}>
+                <img src={splash} className={styles.background}/>
+              </div>
 					</Background>
-          <div>
-					<h1>A collection of textile samples lay spread out on the table ...</h1>
-          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <img src={banner} className={styles.banner}/>
+          <br />
+          <br />
 				</Parallax>
       </div>
     );

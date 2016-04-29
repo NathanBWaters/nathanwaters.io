@@ -19,7 +19,49 @@
     align-items: center;
     justify-content: center;
   }
-  img {
-    width: 100%;
+}
+
+.banner {
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height:300px;
+  width:auto;
+}
+
+@media all and (max-height: 3500px) and (min-height: 1920px) {
+  .background {
+    height: 3500px;
+    opacity: 0.8;
+    width: auto;
+  }
+}
+
+@media all and (max-height: 1920px) and (min-height: 1000px) {
+  .background {
+    height: 1920px;
+    opacity: 0.8;
+    width: auto;
+  }
+}
+
+.black_background {
+  background-color:#000000;
+}
+
+@media all and (max-height: 1000px) and (min-height: 500px) {
+  .background {
+    height: 1000px;
+    opacity: 0.8;
+    width: auto;
+  }
+}
+
+@media all and (max-height: 500px) and (min-height: 0px) {
+  .background {
+    height: 1000px;
+    opacity: 0.8;
+    width: auto;
   }
 }

@@ -7,6 +7,11 @@
 
   p {
     padding-top: 10px;
+    color: #000000;
+  }
+
+  h4 {
+    color: #000000;
   }
 
   img {
@@ -21,11 +26,19 @@
   background-color: #f2f2f2;
 
   h4 {
-    color: #00997a;
+    color: #004d99;
     text-decoration: underline;
   }
 
   img {
-    border: 1px solid #00997a;
+    border: 1px solid #004d99;
   }
+}
+
+NavItem {
+  list-style:none;
+}
+
+.no_list {
+  list-style:none;
 }

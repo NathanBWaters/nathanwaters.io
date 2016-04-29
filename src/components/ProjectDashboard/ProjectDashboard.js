@@ -3,6 +3,9 @@ import Helmet from 'react-helmet';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
+import { LinkContainer } from 'react-router-bootstrap';
+import NavItem from 'react-bootstrap/lib/NavItem';
+
 
 export default class ProjectDashboard extends Component {
   render() {
@@ -21,34 +24,47 @@ export default class ProjectDashboard extends Component {
         <Grid>
           <Row className="show-grid">
             {/* Row 1 - Left Column */}
-            <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-              <h4> The Runners </h4>
-              <img src={runners}/>
-              <p className="about">Video game I led with other talented engineers and artists</p>
-              <div className="toolsWrapper">
-                <p className="toolsList"><b>Tools: </b>Unity3D | Autodesk Maya | C# | Photoshop </p>
-              </div>
+            <LinkContainer to="/projects">
+              <NavItem eventKey={3} className={styles.no_list}>
+                <Col xs={12} sm={6} md={4} className={styles.projectTab}>
 
-            </Col>
+                  <h4> The Runners </h4>
+                  <img src={runners}/>
+                  <p className="about">Video game I led with other talented engineers and artists</p>
+                  <div className="toolsWrapper">
+                    <p className="toolsList"><b>Tools: </b>Unity3D | Autodesk Maya | C# | Photoshop </p>
+                  </div>
+                </Col>
+              </NavItem>
+            </LinkContainer>
 
             {/* Row 1 - Middle Column */}
-            <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-              <h4> Outfitr </h4>
-              <img src={outfitr}/>
-              <p>Created fashion application that allows you to mix and match clothes to find your style</p>
-              <div className="toolsWrapper">
-                <p className="toolsList"><b>Tools: </b>AWS | Node.js | Android | PostgreSQL</p>
-              </div>
-            </Col>
+            <LinkContainer to="/projects">
+              <NavItem eventKey={3} className={styles.no_list}>
+                <Col xs={12} sm={6} md={4} className={styles.projectTab}>
+                  <h4> Outfitr </h4>
+                  <img src={outfitr}/>
+                  <p>Created fashion application that allows you to mix and match clothes to find your style</p>
+                  <div className="toolsWrapper">
+                    <p className="toolsList"><b>Tools: </b>AWS | Node.js | Android | PostgreSQL</p>
+                  </div>
+                </Col>
+              </NavItem>
+            </LinkContainer>
 
-            <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-              <h4> Go-Dash </h4>
-              <img src={godash}/>
-              <p>The Missing Go Library</p>
-              <div className="toolsWrapper">
-                <p className="toolsList"><b>Tools: </b>Golang</p>
-              </div>
-            </Col>
+            <LinkContainer to="/projects">
+              <NavItem eventKey={3} className={styles.no_list}>
+                <Col xs={12} sm={6} md={4} className={styles.projectTab}>
+                  <h4> Go-Dash </h4>
+                  <img src={godash}/>
+                  <p>The Missing Go Library</p>
+                  <div className="toolsWrapper">
+                    <p className="toolsList"><b>Tools: </b>Golang</p>
+                  </div>
+                </Col>
+              </NavItem>
+            </LinkContainer>
+
           </Row>
           <Row className="show-grid">
             {/* Row 1 - Left Column */}
