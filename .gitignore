@@ -1,5 +1,4 @@
 .idea/
-node_modules/
 *.iml
 webpack-assets.json
 webpack-stats.json
