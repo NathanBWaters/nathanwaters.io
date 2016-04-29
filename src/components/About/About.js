@@ -11,6 +11,7 @@ export default class About extends Component {
     const profPic = require('../../../static/prof3.jpg');
     return (
       <div className={styles.aboutMe}>
+        <div>
         <Helmet title="About"/>
         <Grid>
           <Row className="show-grid">
@@ -40,6 +41,7 @@ export default class About extends Component {
             </Col>
           </Row>
         </Grid>
+        </div>
       </div>
     );
   }

@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Parallax, Background } from 'react-parallax';
+// import { Parallax, Background } from 'react-parallax';
 
 export default class Splash extends Component {
   render() {
     const styles = require('./Splash.scss');
     const banner = require('../../../static/logo/Banner.png');
-    const splash = require('../../../static/splash/splash_temp.png');
+    // const splash = require('../../../static/splash/splash_temp.png');
 
     return (
-      <div className={styles.project}>
-        <Helmet title="Splash"/>
+      <div>
+        <div>
+          <Helmet title="Splash"/>
+          <div className={styles.image_container}>
+            <img src={banner} className={styles.banner}/>
+          </div>
+        </div>
 
-        {/* div wrapping parallax to be size of viewport */}
+        {/* div wrapping parallax to be size of viewport
         <Parallax className={styles.parallax} strength={300}>
 					<Background>
               <div className={styles.black_background}>
@@ -27,6 +32,7 @@ export default class Splash extends Component {
           <br />
           <br />
 				</Parallax>
+        */}
       </div>
     );
   }

@@ -22,46 +22,58 @@
 }
 
 .banner {
-  display: block;
+  position: absolute;
   margin: auto;
-  align-items: center;
-  justify-content: center;
+  top: 0; left: 0; bottom: 0; right: 0;
   height:300px;
-  width:auto;
 }
 
-@media all and (max-height: 3500px) and (min-height: 1920px) {
-  .background {
-    height: 3500px;
-    opacity: 0.8;
-    width: auto;
-  }
+.background {
+  position: absolute;
+  height: 100%;
+  opacity: 0.8;
+  width: 100%;
 }
 
-@media all and (max-height: 1920px) and (min-height: 1000px) {
-  .background {
-    height: 1920px;
-    opacity: 0.8;
-    width: auto;
-  }
-}
+// @media all and (max-height: 3500px) and (min-height: 1920px) {
+//   .background {
+//     height: 3500px;
+//     opacity: 0.8;
+//     width: auto;
+//   }
+// }
+//
+// @media all and (max-height: 1920px) and (min-height: 1000px) {
+//   .background {
+//     height: 1920px;
+//     opacity: 0.8;
+//     width: auto;
+//   }
+// }
+//
+// .black_background {
+//   background-color:#000000;
+// }
+//
+// @media all and (max-height: 1000px) and (min-height: 500px) {
+//   .background {
+//     height: 1000px;
+//     opacity: 0.8;
+//     width: auto;
+//   }
+// }
 
-.black_background {
-  background-color:#000000;
-}
+// @media all and (max-height: 500px) and (min-height: 0px) {
+//   .background {
+//     height: 1000px;
+//     opacity: 0.8;
+//     width: auto;
+//   }
+// }
 
-@media all and (max-height: 1000px) and (min-height: 500px) {
-  .background {
-    height: 1000px;
-    opacity: 0.8;
-    width: auto;
-  }
-}
-
-@media all and (max-height: 500px) and (min-height: 0px) {
-  .background {
-    height: 1000px;
-    opacity: 0.8;
-    width: auto;
-  }
+.image_container {
+  height: 80vh;
+  background-image: url('http://i.imgur.com/H1Xhggc.jpg');
+  background-repeat: no-repeat;
+  background-size: cover
 }
