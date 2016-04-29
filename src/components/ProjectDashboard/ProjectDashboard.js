@@ -24,7 +24,7 @@ export default class ProjectDashboard extends Component {
         <Grid>
           <Row className="show-grid">
             {/* Row 1 - Left Column */}
-            <LinkContainer to="/projects">
+            <LinkContainer to="/projects/the_runners">
               <NavItem eventKey={3} className={styles.no_list}>
                 <Col xs={12} sm={6} md={4} className={styles.projectTab}>
 

@@ -1,6 +1,10 @@
 import React from 'react';
 import {IndexRoute, Route} from 'react-router';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
+
+import {
+  TheRunners
+} from 'components';
 import {
     App,
     Chat,
@@ -49,7 +53,9 @@ export default (store) => {
       { /* Routes */ }
       <Route path="about" component={About}/>
       <Route path="login" component={Login}/>
-      <Route path="projects" component={ProjectsMain}/>
+      <Route path="projects" component={ProjectsMain} >
+        <Route path="the_runners" component={TheRunners}/>
+      </Route>
       <Route path="survey" component={Survey}/>
       <Route path="widgets" component={Widgets}/>
 
