@@ -21,11 +21,34 @@
   }
 }
 
-.banner {
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-  height:300px;
+@media all and (max-height: 3500px) and (min-height: 1920px){
+  .banner {
+    height:300px;
+  }
+}
+
+@media all and (max-height: 1920px) and (min-height: 500px){
+  .banner {
+    height:300px;
+  }
+}
+
+@media all and (max-height: 500px) and (min-height: 100px){
+  .banner {
+    height:150px;
+  }
+}
+
+@media all and (max-height: 100px) and (min-height: 0px){
+  .banner {
+    height:50px;
+  }
+}
+
+@media all and (max-height: 10px) and (min-height: 0px){
+  .banner {
+    height:0px;
+  }
 }
 
 .background {
@@ -72,8 +95,11 @@
 // }
 
 .image_container {
-  height: 80vh;
+  height: 70vh;
   background-image: url('http://i.imgur.com/H1Xhggc.jpg');
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

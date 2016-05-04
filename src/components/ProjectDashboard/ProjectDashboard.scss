@@ -1,9 +1,14 @@
+.projectContainer {
+  
+}
 
 .projectTab {
   margin: auto;
   // border: 3px solid #73AD21;
   padding: 10px;
   text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
 
   p {
     padding-top: 10px;
@@ -24,6 +29,7 @@
 
 .projectTab:hover {
   background-color: #f2f2f2;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
   h4 {
     color: #004d99;
@@ -35,7 +41,12 @@
   }
 }
 
-NavItem {
+
+.title {
+  text-align: center;
+}
+
+.NavItem {
   list-style:none;
 }
 

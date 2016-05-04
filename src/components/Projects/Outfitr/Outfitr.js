@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 export default class Outfitr extends Component {
 
   render() {
-    const pStyles = require('../projects.scss');
+    const pStyles = require('../Projects.scss');
     const rStyles = require('./Outfitr.scss');
     const olympus = require('../../../../static/outfitr/outfitr_screenshot.jpeg');
 

@@ -20,7 +20,7 @@ export default class ProjectDashboard extends Component {
         <Helmet title="ProjectDashboard"/>
         <p></p>
         <br />
-        <h1>Projects</h1>
+        <h1 className={styles.title}>Projects</h1>
 
         <Grid>
           <Row className="show-grid">

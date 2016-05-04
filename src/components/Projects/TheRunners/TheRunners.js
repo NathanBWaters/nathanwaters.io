@@ -6,7 +6,7 @@ import Helmet from 'react-helmet';
 export default class TheRunners extends Component {
 
   render() {
-    const pStyles = require('../projects.scss');
+    const pStyles = require('../Projects.scss');
     const rStyles = require('./TheRunners.scss');
     const olympus = require('./olympus.png');
     const newman = require('./runnerschar.gif');
