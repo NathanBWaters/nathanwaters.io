@@ -10,6 +10,9 @@ export default class TheRunners extends Component {
     const rStyles = require('./TheRunners.scss');
     const olympus = require('./olympus.png');
     const newman = require('./runnerschar.gif');
+    const storyline = require('./storyline.png');
+    const research = require('./research.png');
+
     return (
       <div>
         <Helmet title="TheRunners"/>
@@ -23,22 +26,62 @@ export default class TheRunners extends Component {
           </div>
         </div>
 
-        <div className={pStyles.article_content}>
-          <p>The Runners was born out of curiousity on how to build a video game mixed with some for </p>
-          <img src={newman}/>
-          <p>asdfasdf</p>
-        </div>
+        <div className={pStyles.article_center}>
+          <div className={pStyles.article_content}>
 
-        {/* <div style={{backgroundImage: 'url(' + 'http://i.imgur.com/926CrCL.jpg' + ')'}} className={pStyles.header_container}>
-          <div className={pStyles.black_overlay}>
-            <h1 className={pStyles.article_title}>The Runners</h1>
+            <p>The Runners was born out of curiosity on how to build a video game and how to create a world from scratch.</p>
+            <p>I was blessed to have known some <a href="https://github.com/jkhust">incredibly </a>
+              <a href="https://github.com/davidmfinol/">smart</a> <a href="https://github.com/thomascardwell7">
+              and</a> <a href="https://www.youtube.com/channel/UC-B06UJxJ20HYv15lzrm9mA">talented</a> people who were up
+              for the task as well as some wonderful mentors. &nbsp;Making a video game was challenging,
+              and in my opinion it was far harder than making a film. &nbsp;What I got out of it was invaluable
+              learning experience.</p>
+
+            <figure>
+              <img src={newman} alt="Newman 3D Model"/>
+              <figcaption>Newman - main character of The Runners.  Untextured model</figcaption>
+            </figure>
+            <p>It was developed over the period of my junior year and ended with the tech lead graduating from UT Austin. &nbsp;</p>
+            <h2>Beginning the Journey</h2>
+            <p>The Runners began right before the summer of my junior year. &nbsp;I reached out for advice to <a href="http://gammaprogram.utexas.edu/about/the-team/">Professor Toprac</a>,
+             head of Game and Mobile Media Applications at the University of Texas at Austin.
+             &nbsp;He took me under his wing and in return I did <a href="https://drive.google.com/file/d/0B14FG4S3JgjVVnZjQVJIb2FjaU0/view">research</a> with him on
+              3D video game development. &nbsp;The output was used for future teams developing three-dimensional video games,
+              starting with the first 3D video game development at UT Austin in Spring 2014. &nbsp;</p>
+
+            <figure>
+              <img src={research} alt="Research" />
+              <figcaption>Explaining the fundamentals to save future teams time. That way they have more time to make a better game!</figcaption>
+            </figure>
+
+            <h2>Scope</h2>
+            <p>As a first time product developer I learned some valuable lessons in striving for a vision the whole team was ecstatic to realize. We shot for the moon...</p>
+
+            <figure>
+              <img src={storyline} alt="WorldBuilding" />
+              <figcaption>Worldbuilding. We were prepping for making the entire game</figcaption>
+            </figure>
+
+            <p><br/></p>
+            <p>but were not prepped to be astronauts.</p>
+            <p>After some <del>consideration</del> months we realized we probably could not make a 2.5D Game Theft Auto V
+            with a team of 5. &nbsp;So we tied up loose ends for the demo day at the end of
+            the year and had the following product that I could not be more proud of:</p>
+            <iframe src="http://www.youtube.com/embed/4rTT_eflPGs?autoplay=0" className={pStyles.header_media}></iframe>
+            <h2>Conclusions</h2>
+            <p>I am super grateful for the experience to have worked so tirelessly on a video game. &nbsp;Helped shape my career, introduced me to the power and fun of computer science,
+            and taught me an immeasurable amount about making art. &nbsp;</p>
+            <p>I now know the importance of three things:</p>
+            <ul>
+              <li>Learning constantly when tackling big projects</li>
+              <li>Making a minimum viable product that people liked. &nbsp;Then progress.</li>
+              <li>Whatever the project, understand the entire system. &nbsp;</li>
+            </ul>
+            <p><br/></p>
+            <p><br/></p>
+            <p><br/></p>
           </div>
-        </div> */}
-        <p>errr</p>
-
-
-        <p>Hello!</p>
-        <iframe src="https://drive.google.com/file/d/0B14FG4S3JgjVTk5lZGZubjhCTEE/preview" className={pStyles.header_media}></iframe>
+        </div>
       </div>
     );
   }

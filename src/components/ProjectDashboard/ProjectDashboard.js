@@ -71,7 +71,7 @@ export default class ProjectDashboard extends Component {
           <Row className="show-grid">
 
             {/* Row 2 - Left Column */}
-            <LinkContainer to="/projects/website">
+            <LinkContainer to="/projects/personal_website">
             <NavItem eventKey={3} className={styles.no_list}>
               <Col xs={12} sm={6} md={4} className={styles.projectTab}>
                 <h4> Website </h4>
@@ -86,7 +86,7 @@ export default class ProjectDashboard extends Component {
             </LinkContainer>
 
             {/* Row 2 - Middle Column */}
-            <LinkContainer to="/projects/website">
+            <LinkContainer to="/projects/jumpstart_gui">
             <NavItem eventKey={3} className={styles.no_list}>
               <Col xs={12} sm={6} md={4} className={styles.projectTab}>
                 <h4> Jumpstart GUI </h4>

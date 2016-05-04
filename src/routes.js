@@ -5,6 +5,10 @@ import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   TheRunners,
   ProjectDashboard,
+  Outfitr,
+  GoAlgo,
+  JumpstartGUI,
+  Website
 } from 'components';
 import {
     App,
@@ -57,6 +61,10 @@ export default (store) => {
       <Route path="projects" component={ProjectsMain} >
         <IndexRoute component={ProjectDashboard}/>
         <Route path="the_runners" component={TheRunners}/>
+        <Route path="outfitr" component={Outfitr}/>
+        <Route path="go_algo" component={GoAlgo}/>
+        <Route path="jumpstart_gui" component={JumpstartGUI}/>
+        <Route path="personal_website" component={Website}/>
       </Route>
       <Route path="survey" component={Survey}/>
       <Route path="widgets" component={Widgets}/>
