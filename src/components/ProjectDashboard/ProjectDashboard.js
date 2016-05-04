@@ -14,6 +14,7 @@ export default class ProjectDashboard extends Component {
     const outfitr = require('../../../static/outfitr/outfitr_screenshot.jpeg');
     const jumpstart = require('../../../static/jumpstart/square_form.png');
     const godash = require('../../../static/godash/godash_code.png');
+    const websiteLogo = require('../../../static/logo/Logo.png');
     return (
       <div>
         <Helmet title="ProjectDashboard"/>
@@ -39,7 +40,7 @@ export default class ProjectDashboard extends Component {
             </LinkContainer>
 
             {/* Row 1 - Middle Column */}
-            <LinkContainer to="/projects">
+            <LinkContainer to="/projects/outfitr">
               <NavItem eventKey={3} className={styles.no_list}>
                 <Col xs={12} sm={6} md={4} className={styles.projectTab}>
                   <h4> Outfitr </h4>
@@ -52,10 +53,10 @@ export default class ProjectDashboard extends Component {
               </NavItem>
             </LinkContainer>
 
-            <LinkContainer to="/projects">
+            <LinkContainer to="/projects/go_algo">
               <NavItem eventKey={3} className={styles.no_list}>
                 <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-                  <h4> Go-Dash </h4>
+                  <h4> Go-Algo </h4>
                   <img src={godash}/>
                   <p>The Missing Go Library</p>
                   <div className="toolsWrapper">
@@ -66,33 +67,44 @@ export default class ProjectDashboard extends Component {
             </LinkContainer>
 
           </Row>
-          <Row className="show-grid">
-            {/* Row 1 - Left Column */}
-            <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-              <h4> Website </h4>
-              <p>The website you are currently looking at! Click the Github
-              icon on the top right to see the source code.</p>
-              <div className="toolsWrapper">
-                <p className="toolsList"><b>Tools: </b>React | Redux | Node.js | ESLint | AWS</p>
-              </div>
-            </Col>
 
-            {/* Row 1 - Middle Column */}
-            <Col xs={12} sm={6} md={4} className={styles.projectTab}>
-              <h4> Jumpstart GUI </h4>
-              <img src={jumpstart}/>
-              <p>Led the development of application created for Booz Allen Hamilton that
-              allows new teams to have a customizable DevOps
-              Architecture for each of their microservices using a simple form.</p>
-              <div className="toolsWrapper">
-                <p className="toolsList"><b>Tools: </b>React | Redux | Node.js | ESLint | AWS | Cloudformation |
-                 Splunk | Prometheus | Simian Army | Jenkins 2.0 | Elastic Container Service</p>
-              </div>
-            </Col>
+          <Row className="show-grid">
+
+            {/* Row 2 - Left Column */}
+            <LinkContainer to="/projects/website">
+            <NavItem eventKey={3} className={styles.no_list}>
+              <Col xs={12} sm={6} md={4} className={styles.projectTab}>
+                <h4> Website </h4>
+                <img src={websiteLogo}/>
+                <p>The website you are currently looking at! Click the Github
+                icon on the top right to see the source code.</p>
+                <div className="toolsWrapper">
+                  <p className="toolsList"><b>Tools: </b>React | Redux | Node.js | ESLint | AWS</p>
+                </div>
+              </Col>
+              </NavItem>
+            </LinkContainer>
+
+            {/* Row 2 - Middle Column */}
+            <LinkContainer to="/projects/website">
+            <NavItem eventKey={3} className={styles.no_list}>
+              <Col xs={12} sm={6} md={4} className={styles.projectTab}>
+                <h4> Jumpstart GUI </h4>
+                <img src={jumpstart}/>
+                <p>Led the development of application created for Booz Allen Hamilton that
+                allows new teams to have a customizable DevOps
+                Architecture for each of their microservices using a simple form.</p>
+                <div className="toolsWrapper">
+                  <p className="toolsList"><b>Tools: </b>React | Redux | Node.js | ESLint | AWS | Cloudformation |
+                   Splunk | Prometheus | Simian Army | Jenkins 2.0 | Elastic Container Service</p>
+                </div>
+              </Col>
+              </NavItem>
+            </LinkContainer>
 
             <Col xs={12} sm={6} md={4} className={styles.projectTab}>
               <h4> More </h4>
-              <p>Check out my other projects!</p>
+              <p>More coming soon!</p>
             </Col>
           </Row>
         </Grid>
