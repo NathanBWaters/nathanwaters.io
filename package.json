@@ -17,6 +17,9 @@
   "main": "bin/server.js",
   "scripts": {
     "start": "concurrent --kill-others \"npm run start-prod\" \"npm run start-prod-api\"",
+    "start-forever" : "concurrent --kill-others \"npm run forever-prod\" \"npm run forever-prod-api\"",
+    "forever-prod": "better-npm-run forever-prod",
+    "forever-prod-api": "better-npm-run forever-prod-api",
     "start-prod": "better-npm-run start-prod",
     "start-prod-api": "better-npm-run start-prod-api",
     "build": "better-npm-run build",
@@ -31,6 +34,23 @@
     "test-node-watch": "./node_modules/mocha/bin/mocha $(find api -name '*-test.js') --compilers js:babel-core/register --watch"
   },
   "betterScripts": {
+    "forever-prod": {
+      "command": "forever start ./bin/server.js",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production",
+        "PORT": 8080,
+        "APIPORT": 3030
+      }
+    },
+    "forever-prod-api": {
+      "command": "forever start ./bin/api.js",
+      "env": {
+        "NODE_PATH": "./api",
+        "NODE_ENV": "production",
+        "APIPORT": 3030
+      }
+    },
     "start-prod": {
       "command": "node ./bin/server.js",
       "env": {
