@@ -66,10 +66,6 @@ export default class ProjectDashboard extends Component {
               </NavItem>
             </LinkContainer>
 
-          </Row>
-
-          <Row className="show-grid">
-
             {/* Row 2 - Left Column */}
             <LinkContainer to="/projects/personal_website">
             <NavItem eventKey={3} className={styles.no_list}>
