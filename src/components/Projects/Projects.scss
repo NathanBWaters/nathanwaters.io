@@ -71,3 +71,37 @@
   margin:auto;
   padding: 30px;
 }
+
+.landing_wrapper {
+  height: 300px;
+  width: 100%;
+  position: static;
+  background-color: black;
+}
+
+.background_image {
+  display: block;
+  margin: auto;
+  zoom: 2;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  min-height: 100%;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.image_container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.content_container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

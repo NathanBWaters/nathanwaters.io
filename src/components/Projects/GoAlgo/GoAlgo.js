@@ -8,7 +8,7 @@ export default class GoAlgo extends Component {
   render() {
     const pStyles = require('../Projects.scss');
     const rStyles = require('./GoAlgo.scss');
-    const olympus = require('../../../../static/outfitr/outfitr_screenshot.jpeg');
+    const olympus = require('../../../../static/godash/godash_code.png');
 
 
     return (
@@ -17,10 +17,10 @@ export default class GoAlgo extends Component {
         <div className={rStyles.landing_wrapper}>
           <div className={pStyles.article_info}>
             <img src={olympus} className={pStyles.article_image} />
-            <h1 className={pStyles.article_title}>Outfitr</h1>
-            <p className={pStyles.article_subtitle}>Fashion Application</p>
-            <p className={pStyles.article_subtitle}><b>Role: </b>Director, Game Designer, Technical Artist, Programmer, Modeler, Texturer, Animator</p>
-            <p className={pStyles.article_subtitle}><b>Tools: </b>Java, Node.js, AWS, PostgreSQL</p>
+            <h1 className={pStyles.article_title}>Go-Algo</h1>
+            <p className={pStyles.article_subtitle}>Algorithms Library for Golang</p>
+            <p className={pStyles.article_subtitle}><b>Role: </b>Software Engineer</p>
+            <p className={pStyles.article_subtitle}><b>Tools: </b>Golang</p>
           </div>
         </div>
 
