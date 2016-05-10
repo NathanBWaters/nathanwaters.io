@@ -22,7 +22,7 @@ export default class Website extends Component {
             <h1 className={pStyles.article_title}>Website</h1>
             <p className={pStyles.article_subtitle}>Personal website and blog at nathanwaters.io</p>
             <p className={pStyles.article_subtitle}><b>Role: </b>Software Engineer</p>
-            <p className={pStyles.article_subtitle}><b>Tools: </b>React, Redux, Node.js, AWS Elastic Beanstalk, Docker</p>
+            <p className={pStyles.article_subtitle}><b>Tools: </b>React, Redux, Node.js, AWS Elastic Beanstalk</p>
           </div>
         </div>
 
@@ -43,7 +43,6 @@ export default class Website extends Component {
               <li>Webpack</li>
               <li>Node.js</li>
               <li>AWS Elastic Beanstalk</li>
-              <li>Docker</li>
               <li>Forever</li>
             </ul>
           </div>

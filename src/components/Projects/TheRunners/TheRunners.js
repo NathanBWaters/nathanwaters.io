@@ -55,17 +55,17 @@ export default class TheRunners extends Component {
             </figure>
 
             <h2>Scope</h2>
-            <p>As a first time product developer I learned some valuable lessons in striving for a vision the whole team was ecstatic to realize. We shot for the moon...</p>
+            <p>As a first time product developer I learned some valuable lessons in striving for a vision: it’s important to maintain
+            a clear long-term vision but you must break down that vision into achievable milestones.  We made the rookie mistake of
+            starting out the race shooting for the moon without focusing on first nailing the core of the gameplay</p>
 
             <figure>
               <img src={storyline} alt="WorldBuilding" />
               <figcaption>Worldbuilding. We were prepping for making the entire game</figcaption>
             </figure>
 
-            <p><br/></p>
-            <p>but were not prepped to be astronauts.</p>
-            <p>After some <del>consideration</del> months we realized we probably could not make a 2.5D Game Theft Auto V
-            with a team of 5. &nbsp;So we tied up loose ends for the demo day at the end of
+            <p>After some <del>consideration</del> months we realized we probably could not make a 2.5D game on the scale of Grand Theft Auto
+            with a team of five people (and only 3 developers). &nbsp;So we tied up loose ends for the demo day at the end of
             the year and had the following product that I could not be more proud of:</p>
             <iframe src="http://www.youtube.com/embed/4rTT_eflPGs?autoplay=0" className={pStyles.header_media}></iframe>
             <h2>Conclusions</h2>

@@ -1,7 +1,9 @@
 .header_media{
   margin: auto;
   height:83vh;
-  width: 100%;
+  width: 120%;
+  margin-left: -10%;
+  margin-right: -10%;
 }
 
 .article_title {
@@ -43,6 +45,13 @@
   align-items: center;
 }
 
+.single_media {
+  width: 120%;
+  margin-left: -10%;
+  margin-right: -10%;
+  height: auto;
+}
+
 .article_content {
   line-height: 1.8;
   font-size: 15px;
@@ -50,8 +59,11 @@
   figure {
     display:block;
     margin:auto;
-    width: 80%;
-    padding: 30px;
+    width: 120%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -10%;
+    margin-right: -10%;
 
     figcaption {
       font-size: 12px;
